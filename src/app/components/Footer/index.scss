@@ -1,0 +1,18 @@
+.Footer {
+  line-height: initial;
+  display: flex;
+  justify-content: center;
+  background: #95a5a6;
+
+  
+  svg {
+    padding: 10px;
+    font-size: 24px;
+    color: #e1e1e1;
+    transition: color 0.3s linear;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}

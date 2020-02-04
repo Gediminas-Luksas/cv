@@ -1,0 +1,45 @@
+.Header {
+	margin: 15px 0;
+	position: relative;
+	hr.hr {
+		border-top: 2px solid #95a5a6;
+		border-bottom: 1px solid #95a5a6;
+	}
+	h1 {
+		font-size: 24px;
+	}
+
+	&--contact {
+		font-weight: 700;
+
+		a {
+			font-weight: 500;
+			color: #989595;
+			text-decoration: none;
+		}
+	}
+
+	&--profile-picture {
+		height: 160px;
+		transition: transform 0.2s ease-in;
+		transform: rotate(5deg);
+		position: absolute;
+		top: -5px;
+		right: -5px;
+
+		&:hover {
+			transform: rotate(0deg);
+		}
+	}
+
+	&--summary {
+		margin-top: 20px;
+	}
+
+	&--language-select {
+		padding-top: 10px;
+		position: absolute;
+		top: -25px;
+		left: 0;
+	}
+}

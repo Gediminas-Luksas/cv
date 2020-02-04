@@ -1,0 +1,25 @@
+.App {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 3%;
+}
+
+@media screen and (max-width: 767px) {
+	.Section {
+		flex-direction: column;
+		&--left {
+			h2,
+			h3 {
+				text-align: left !important;
+				width: 100%;
+				border-bottom: 2px solid #95a5a6;
+			}
+			&:after {
+				display: none;
+			}
+			&--column {
+				width: 120px;
+			}
+		}
+	}
+}
