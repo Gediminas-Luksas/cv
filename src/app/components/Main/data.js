@@ -36,7 +36,7 @@ const education = {
 
 const skills = {
 	en: {
-		lable3: 'Skills',
+		lableSkills: 'Skills',
 		subtitle: '2018.10 - 2019.06',
 		list: [
 			{
@@ -53,7 +53,7 @@ const skills = {
 		],
 	},
 	lt: {
-		lable3: 'Patirtis',
+		lableSkills: 'Patirtis',
 		subtitle: '2018.10 - 2019.06',
 		list: [
 			{
@@ -71,13 +71,36 @@ const skills = {
 	},
 };
 
+const work = {
+	en: {
+		lableWork: 'Work experience',
+		subtitles: '2014.11 - 2019.10',
+		work: 'UAB City Service Engineering',
+		position: {
+			lable: 'Work Manager: ',
+			value:
+				'Organise and plan the work of service stuff: - identify work areas; - make short-term (daily) and long-term (weekly) working plans for stuff; - create work schedules. Manage the whole documentation related with work safety, warehouse and etc. Supervise work quality and work discipline;',
+		},
+	},
+	lt: {
+		lableWork: 'Darbo patirtis',
+		subtitles: '2014.11 - 2019.10',
+		work: 'UAB City Service Engineering',
+		position: {
+			lable: 'Darbų vykdytojas: ',
+			value:
+				'- Vadovauti aptarnaujančio personalo veiklai, prižiūrėti jų darbo kokybę bei darbo drausmę. - Organizuoti aptarnaujančio personalo darbą:nustatyti darbo plotus; sudaryti trumpalaikį(dienos) ir ilgalaikį(savaitės) darbo planą darbininkams; sudaryti darbo grafikus aptarnaujančiam personalui. - Tvarkyti veiklos, darbų saugos, sandėlio dokumentus.',
+		},
+	},
+};
+
 const hobies = {
 	en: {
-		lable4: 'Hobbies',
+		lableHobies: 'Hobbies',
 		value: 'Playing Football, Programming, Mentoring, Reading, Going to the gym, Travelling.',
 	},
 	lt: {
-		lable4: 'Pomėgiai',
+		lableHobies: 'Pomėgiai',
 		value:
 			'Futbolas, kompiuteriai, mentorystė, skaitymas, lankymasis sporto salėje, kelionės, saviugda.',
 	},
@@ -85,14 +108,14 @@ const hobies = {
 
 const references = {
 	en: {
-		lable5: 'Languages',
-		value2: 'English: B2',
-		value6: 'Russian: B1',
+		lableRef: 'Languages',
+		valueEn: 'English: B2',
+		valueRu: 'Russian: B1',
 	},
 	lt: {
-		lable5: 'Kalbos',
-		value2: 'Anglų kalba: B2',
-		value6: 'Rusų kalba: B1',
+		lableRef: 'Kalbos',
+		valueEn: 'Anglų kalba: B2',
+		valueRu: 'Rusų kalba: B1',
 	},
 };
-export default { education, skills, hobies, references };
+export default { education, skills, work, hobies, references };

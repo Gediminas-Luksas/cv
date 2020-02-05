@@ -15,9 +15,10 @@ function Main(props) {
 		majorCodeAcademy,
 		major,
 	} = data.education[language];
-	const { lable3, subtitle, list } = data.skills[language];
-	const { lable4, value } = data.hobies[language];
-	const { lable5, value2, value6 } = data.references[language];
+	const { lableSkills, subtitle, list } = data.skills[language];
+	const { lableHobies, value } = data.hobies[language];
+	const { lableRef, valueEn, valueRu } = data.references[language];
+	const { lableWork, subtitles, work, position } = data.work[language];
 
 	return (
 		<main>
@@ -54,7 +55,7 @@ function Main(props) {
 			<section className="Section">
 				<div className="Section--left">
 					<div className="Section--left--column">
-						<h3>{lable3}</h3>
+						<h3>{lableSkills}</h3>
 					</div>
 				</div>
 				<div className="Section--right">
@@ -70,18 +71,33 @@ function Main(props) {
 			<section className="Section">
 				<div className="Section--left">
 					<div className="Section--left--column">
-						<h3>{lable5}</h3>
+						<h3>{lableWork}</h3>
 					</div>
 				</div>
 				<div className="Section--right">
-					<p>{value2}</p>
-					<p>{value6}</p>
+					<span>{subtitles}</span>
+					<h4>{work}</h4>
+					<p>
+						<span>{position.lable} </span>
+					</p>
+					{position.value}
 				</div>
 			</section>
 			<section className="Section">
 				<div className="Section--left">
 					<div className="Section--left--column">
-						<h3>{lable4}</h3>
+						<h3>{lableRef}</h3>
+					</div>
+				</div>
+				<div className="Section--right">
+					<p>{valueEn}</p>
+					<p>{valueRu}</p>
+				</div>
+			</section>
+			<section className="Section">
+				<div className="Section--left">
+					<div className="Section--left--column">
+						<h3>{lableHobies}</h3>
 					</div>
 				</div>
 				<div className="Section--right">
